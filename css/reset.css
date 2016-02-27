@@ -1,0 +1,54 @@
+/*样式重置*/
+
+/*
+*{
+	margin: 0;
+	padding: 0;
+}*/ 
+body,h1,h2,h3,h4,h5,dd,dl,dt,ol,ul,p,form,th,td,input,select,textarea{
+	margin: 0;
+	padding: 0;
+}
+em{
+	font-style: normal;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+input,textarea{
+	outline: none;
+}
+table{
+	border-collapse: collapse;
+} /*去掉表格间隙*/
+textarea{
+	resize:none;
+	overflow: auto;
+}
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+
+/*public css*/
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	zoom:1;
+}/*用来处理IE6、7*/
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}

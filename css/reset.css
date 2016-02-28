@@ -52,3 +52,34 @@ body{
 	display: block;
 	clear: both;
 }
+.gradient{
+		background: -ms-linear-gradient(top,#fff,#f8f8f8);
+		background: -moz-linear-gradient(top,#fff,#f8f8f8;
+		background: -webkit-linear-gradient(top,#fff,#f8f8f8);
+		background: linear-gradient(top,#fff,#f8f8f8);/*以后浏览器升级可以进行修改*/
+		-ms-filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#f8f8f8,gradientType=1);
+		+background:#f9f9f9;/*IE hack*/
+	}
+
+
+/*layout css*/
+.w{
+	width: 960px;
+	margin: 0 auto 10px;
+}
+#header{
+	height: 36px;
+	border:1px solid #333;
+	border-radius: 0 0 6px;
+
+}
+#nav{}
+#search{}
+.content{}
+.section{}
+.option{}
+.main_ad{}
+.side{}
+.side_section{}
+.side_ad{}
+#footer{}

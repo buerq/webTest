@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>渐变</title>
+	<style>
+	#div1{
+		width: 200px;
+		height: 200px;
+		border:1px solid #333;
+		background: -ms-linear-gradient(top,pink,yellow);
+		background: -moz-linear-gradient(top,pink,yellow);
+		background: -webkit-linear-gradient(top,pink,yellow);
+		background: linear-gradient(top,pink,yellow);/*以后浏览器升级可以进行修改*/
+		-ms-filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=pink,endcolorstr=yellow,gradientType=1);
+		+background:#ff7a00;/*IE hack*/
+	}
+	</style>
+</head>
+<body>
+<div id="div1"></div>	
+</body>
+</html>

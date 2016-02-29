@@ -46,7 +46,7 @@ body{
 }
 .clear{
 	zoom:1;
-}/*用来处理IE6、7*/
+}
 .clear:after{
 	content: "";
 	display: block;
@@ -54,32 +54,66 @@ body{
 }
 .gradient{
 		background: -ms-linear-gradient(top,#fff,#f8f8f8);
-		background: -moz-linear-gradient(top,#fff,#f8f8f8;
+		background: -moz-linear-gradient(top,#fff,#f8f8f8);
 		background: -webkit-linear-gradient(top,#fff,#f8f8f8);
 		background: linear-gradient(top,#fff,#f8f8f8);/*以后浏览器升级可以进行修改*/
-		-ms-filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#f8f8f8,gradientType=1);
+		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#f8f8f8,gradientType=0)";
 		+background:#f9f9f9;/*IE hack*/
 	}
-
-
-/*layout css*/
 .w{
 	width: 960px;
 	margin: 0 auto 10px;
 }
+#search,.section,.option,#footer{
+	border: 1px solid #dbdbdb;
+	border-radius: 6px;
+}
+/*layout css*/
+
 #header{
 	height: 36px;
-	border:1px solid #333;
-	border-radius: 0 0 6px;
+	border-radius: 0 0 6px 6px;
 
 }
-#nav{}
-#search{}
+#nav{
+	height: 100px;
+}
+#search{
+	height: 114px;
+	margin-bottom: 10px;
+}
 .content{}
-.section{}
-.option{}
-.main_ad{}
-.side{}
+.main{
+	width: 710px;
+}
+.main_wrap{
+	margin-bottom: 10px;
+}
+.section{
+	width:318px;
+	height: 418px;
+	padding: 0 15px;
+	background: pink;
+}
+.option{
+	width: 350px;
+	height: 418px;
+	background: green;
+}
+.main_ad{
+	width: 710px;
+	height: 90px;
+	background: #9cdaf1;
+	margin-bottom: 10px;
+}
+.side{
+	width: 240px;
+	margin-left: 10px;
+}
 .side_section{}
 .side_ad{}
-#footer{}
+#footer{
+	width: 958px;
+	height: 64px;
+	background: #b9f4e4;
+}

@@ -57,16 +57,19 @@ body{
 		background: -moz-linear-gradient(top,#fff,#f8f8f8);
 		background: -webkit-linear-gradient(top,#fff,#f8f8f8);
 		background: linear-gradient(top,#fff,#f8f8f8);/*以后浏览器升级可以进行修改*/
-		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#f8f8f8,gradientType=0)";
+		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ffffff,endcolorstr=#f8f8f8,gradientType=0)";
 		+background:#f9f9f9;/*IE hack*/
 	}
-.w{
-	width: 960px;
-	margin: 0 auto 10px;
-}
-#search,.section,.option,#footer,.login,.border_ad,.side_section{
+#search,.section,#footer,.login,.border_ad,.side_section{
 	border: 1px solid #dbdbdb;
 	border-radius: 6px;
+}
+#header, #nav, #search, #footer{
+	width: 958px;
+	margin: 0 auto 10px;
+}
+.main_wrap, .main_ad, .login, .border_ad, .side_ad, .side_section{
+	margin-bottom: 10px;
 }
 /*layout css*/
 
@@ -80,14 +83,16 @@ body{
 }
 #search{
 	height: 114px;
-	margin-bottom: 10px;
 }
-.content{}
+.content{
+	width: 960px;
+	margin:0 auto 10px;
+}
 .main{
 	width: 710px;
 }
 .main_wrap{
-	margin-bottom: 10px;
+
 }
 .section{
 	width:318px;
@@ -98,13 +103,41 @@ body{
 .option{
 	width: 350px;
 	height: 418px;
-	background: green;
+	position: relative;
+}
+.option .nav{
+	position: relative;
+	height: 34px;
+	z-index: 2;
+}
+.option .nav li{
+	width: 172px;
+	height: 33px;
+	float: left;
+	border: 1px solid #dbdbdb;
+	border-bottom: none;
+	border-radius: 6px 6px 0 0;
+}
+.option .nav .active{
+	width: 172px;
+	height: 34px;
+	background: #fff;
+
+}
+.con{
+	width: 348px;
+	height: 70px;
+	border:1px solid #dbdbdb;
+	border-radius: 0 0 6px 6px;
+	position: absolute;
+	top: 34px;
+	left: 0;
+	z-index: 1;
 }
 .main_ad{
 	width: 710px;
 	height: 90px;
 	background: #9cdaf1;
-	margin-bottom: 10px;
 }
 .side{
 	width: 240px;
@@ -113,24 +146,20 @@ body{
 .login{
 	width: 238px;
 	height: 138px;
-	margin-bottom: 10px;
 }
 .border_ad{
 	width: 238px;
 	height: 88px;
-	margin-bottom: 10px;
+	overflow: hidden;
 }
 .side_ad{
 	width: 240px;
 	height: 180px;
-	-webkit-border-radius:6px;
-	-moz-border-radius:6px;
 	border-radius: 6px;
-	margin-bottom: 10px;
+	overflow: hidden;
 }
 .side_section{
 	padding: 0 12px;
-	margin-bottom: 10px;
 }
 .side_section .main_title{
 	height: 40px;
@@ -159,29 +188,9 @@ span{
 .main_title>a>img{
 	vertical-align: middle;
 }
-.
-#tab{
-	height: 25px;
-	border-bottom: 1px solid #dbdbdb;
-}
-.tabnav4{
-	height: 25px;
-	float: left;
-	margin-bottom: -1px;
-	position: relative;
 
-}
-.tabnav4>li{
-	float: left;
-	height: 24px;
-	line-height: 24px;
-	border:1px solid #dadada;
-	margin-right: -1px;
-	border-radius: 6px;
-	position: relative;
-}
+
 #footer{
-	width: 958px;
 	height: 64px;
 	background: #b9f4e4;
 }

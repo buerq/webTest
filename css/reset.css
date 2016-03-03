@@ -92,7 +92,7 @@ body{
 	width: 710px;
 }
 .main_wrap{
-
+	
 }
 .section{
 	width:318px;
@@ -166,12 +166,12 @@ body{
 	line-height: 40px;
 	position: relative;
 }
-strong{
+.main_title>strong{
 	font-size: 12px;
 	color: #cc0d13;
 	font-family:arial,verdana,microsoft yahei;
 }
-span{
+.main_title>span{
 	font-size: 12px;
 	color: #010000;
 	font-family: 宋体;
@@ -192,5 +192,15 @@ span{
 
 #footer{
 	height: 64px;
-	background: #b9f4e4;
+	text-align: center;
+	line-height: 25px;
+	padding-top: 14px;
+	color: #454545;
+}
+#footer a{
+	color: #454545;
+	margin:0 6px;
+}
+#footer span{
+	margin-left: 10px;
 }

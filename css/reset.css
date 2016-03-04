@@ -74,14 +74,16 @@ body{
 /*layout css*/
 
 #header{
-	height: 36px;
+	height: 30px;
 	border-radius: 0 0 6px 6px;
 
 }
 #nav{
 	height: 100px;
+	position: relative;
 }
 #search{
+	position: relative;
 	height: 114px;
 }
 .content{
@@ -203,4 +205,116 @@ body{
 }
 #footer span{
 	margin-left: 10px;
+}
+
+/*header内容*/
+.city{
+	line-height: 20px;
+	color: #666;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+.city a{
+	width: 38px;
+	height: 18px;
+	display: inline-block;
+	border:1px solid #e5e5e5;
+	text-align: center;
+	color: #999999;
+	border-radius:3px;
+	box-shadow: 1px 1px 0 0 #ececec;
+}
+.city a:hover{
+	background: #f1f1f1;
+}
+.city .active{
+	color: #d60d03;
+}
+.link{
+	line-height: 30px;
+	color: #d5d5d5;
+	padding-right: 20px;
+	word-spacing: 4px;
+}
+.link a{
+	color: #666666;
+	background: url(../img/header_link_bg.gif) no-repeat 0 3px;
+	padding-left:20px;
+}
+.link .ico1{
+	background-position: 0px 3px;
+}
+.link .ico2{
+	background-position: 0px -27px;
+}
+.link a:hover{
+	text-decoration: underline;
+}
+
+/*nav*/
+#nav ul{
+	position: absolute;
+	top: 10px;
+}
+.nav_1{
+	left: 11px;
+}
+#nav li{
+	float: left;
+	
+}
+#nav li a{
+	width: 66px;
+	display: inline-block;
+	padding-top: 50px;
+	text-align: center;
+	color: #333333;
+	background: url("../img/nav_bg.png") no-repeat;
+}
+#nav a:hover{
+	color: #d91002;
+	font-weight: bold;
+}
+#nav h1{
+	width: 223px;
+	height: 62px;
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+}
+.nav_2{
+	right: 11px;
+}
+#nav .bg1{ background-position: 0 0;}
+#nav .bg2{ background-position: -66px 0;}
+#nav .bg3{ background-position: -132px 0; }
+#nav .bg4{ background-position: -198px 0; }
+#nav .bg5{ background-position: -264px 0; }
+#nav .bg6{ background-position: -330px 0; }
+#nav .bg7{ background-position: -394px 0; }
+#nav .bg8{ background-position:  -460px 0; }
+#nav .bg9{ background-position:  -526px 0;}
+#nav .bg10{ background-position: -592px 0;}
+#nav .bg1:hover{ background-position: 0 -70px;}
+#nav .bg2:hover{ background-position: -66px -70px;}
+#nav .bg3:hover{ background-position: -132px -70px; }
+#nav .bg4:hover{ background-position: -198px -70px; }
+#nav .bg5:hover{ background-position: -264px -70px; }
+#nav .bg6:hover{ background-position: -330px -70px; }
+#nav .bg7:hover{ background-position: -394px -70px; }
+#nav .bg8:hover{ background-position:  -460px -70px; }
+#nav .bg9:hover{ background-position:  -526px -70px;}
+#nav .bg10:hover{ background-position: -592px -70px;}
+
+/*search*/
+#search .bar{
+	width: 958px;
+	height: 66px;
+	borer:1px solid #e21c01;
+	border-radius: 5px;
+	box-shadow: 1px 1px 0 0 #ececec;
+	background: #e21c01;
+	position: absolute;
+	top: 27px;
+	left: -1px;
 }

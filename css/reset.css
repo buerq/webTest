@@ -168,6 +168,16 @@ body{
 	line-height: 40px;
 	position: relative;
 }
+.login h2{
+	text-indent: 12px;
+    color: #000;
+    font-size: 12px;
+    line-height: 34px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.login h2 em{
+	color: #cc0d13;
+}
 .main_title>strong{
 	font-size: 12px;
 	color: #cc0d13;
@@ -309,12 +319,104 @@ body{
 /*search*/
 #search .bar{
 	width: 958px;
-	height: 66px;
+	height: 64px;
 	borer:1px solid #e21c01;
 	border-radius: 5px;
 	box-shadow: 1px 1px 0 0 #ececec;
 	background: #e21c01;
 	position: absolute;
-	top: 27px;
+	top: 16px;
 	left: -1px;
+	z-index: 1;
+}
+#search .menu{
+	position: absolute;
+	top: -27px;
+	left: 226px;
+}
+#search .menu li{
+	float: left;
+	width: 78px;
+	height: 25px;
+	display: inline-block;
+	cursor: pointer;
+	line-height: 25px;
+	text-align: center;
+	margin-right: 1px;
+	border-bottom: none;
+	border:1px solid #fbe3d9;
+	font-size: 14px;
+}
+#search .menu .active{
+	height: 27px;
+	background:#e21c01;
+	border: 1px solid #e21c01;
+	color: #fff;
+	position: relative;
+	font-weight: bold;
+	top: -1px;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
+	border-radius: 5px 5px 0 0;
+}
+#search .img{
+	position: absolute;
+	background: url("../img/search_img.png") no-repeat;
+	width: 163px;
+	height: 122px;
+	top: -3px;
+	left: 30px;
+	z-index: 2;
+}
+#search .form{
+	position: absolute;
+	left: 226px;
+	top: 34px;
+	z-index: 3;
+}
+#search .form .text{
+	width: 380px;
+	height: 22px;
+	line-height: 22px;
+	padding:0 12px;
+	border:1px solid #d49f98;
+	color: #ea7a7a;
+	font-family: "微软雅黑";
+	border-radius: 3px;
+	background: #fff;
+	box-shadow: inset 2px 2px 2px 2px rgba(0,0,0,0.25);
+	float: left;
+	margin-right: 10px;
+}
+#search .form .btn{
+	width: 63px;
+	height: 26px;
+	border:none;
+	background: url("../img/search_img.png") no-repeat -163px 0;
+	float: left;
+}
+#search .keyword{
+	width: 206px;
+	float: right;
+	color: #ffffff;
+	position: absolute;
+	top: 30px;
+	right: 36px;
+	z-index: 3;
+	line-height: 18px;
+}
+#search .keyword a{
+	color: #fff;
+}
+
+
+/*section */
+.section .video_title{
+	height: 42px;
+	color: #d90000;
+	font-family: arial;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 42px;
+	background: url("../img/vedio_bg.gif") no-repeat 105px 10px;
+	position: relative;
 }

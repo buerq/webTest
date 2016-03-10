@@ -100,7 +100,6 @@ body{
 	width:318px;
 	height: 418px;
 	padding: 0 15px;
-	background: pink;
 }
 .option{
 	width: 350px;
@@ -417,6 +416,27 @@ body{
 	font-size: 18px;
 	font-weight: normal;
 	line-height: 42px;
-	background: url("../img/vedio_bg.gif") no-repeat 105px 10px;
+	background: url("../img/video_bg.gif") no-repeat 105px 10px;   
 	position: relative;
+}
+.section .video{
+	margin-bottom: 13px;
+}
+.section .video_list{
+	height: 78px;
+	padding-left: 98px;
+	background: url(../img/video_bg.gif) no-repeat 3px -47px;
+}
+.section .video_list li{
+	float: left;
+	list-style-type: disc;
+	color: #d20f02;
+	line-height: 20px;
+}
+.section .video_list li a{
+	color: #4d4d4d;
+	
+}
+.section .video_list li a:hover{
+	text-decoration: underline;
 }

@@ -440,3 +440,86 @@ body{
 .section .video_list li a:hover{
 	text-decoration: underline;
 }
+.section .new_title{
+	color: #ec1c16;
+	height: 70px;
+	position: relative;
+	background: url(../img/new_title_bg.gif) no-repeat right 0 ;
+
+}
+.section .new_title strong,.section .new_title span{
+	position: absolute;
+	left: 22px;
+}
+.section .new_title strong{
+	font-size: 12px;
+	top: 19px;
+}
+.section .new_title span{
+	color: #333333;
+	font-size: 24px;
+	top: 34px;
+	font-weight: normal;
+}
+.section .new_title em{
+	font-size: 36px;
+	position: absolute;
+	top: 22px;
+	left: 126px;
+}
+.section .info{
+	height: 104px;
+}
+.section .info .img{
+	width: 84px;
+	height: 84px;
+	position: relative;
+	float: left;
+	left: 20px;
+}
+.section .info .img .mask{
+	width: 84px;
+	height: 84px;
+	background: url(../img/activity_bg.gif) no-repeat -373px 0px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.section .info .text{
+	width: 204px;
+	float: right;
+}
+.section .info .text em{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border:1px solid #d2d2d2;
+	border-radius: 3px;
+	color: #d82823;
+	font-weight: bold;
+	text-align: center;
+	line-height: 25px;
+	font-size: 14px;
+}
+.section .info .text h3{
+	font-size: 12px;
+	display: inline-block;
+}
+.section .info .text p{
+	color: #999999;
+	line-height: 18px;
+	margin-top: 4px;
+}
+.section .calendar{
+	color: #4e4e4e;
+	width: 300px;
+	height: 32px;
+	line-height: 32px;
+	margin-left: 20px;
+
+}
+.section .calendar span{
+	font-size: 14px;
+	margin: 0 4px;
+
+}

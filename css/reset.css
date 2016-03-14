@@ -516,6 +516,7 @@ body{
 	height: 32px;
 	line-height: 32px;
 	margin-left: 20px;
+	overflow: hidden;
 
 }
 .section .calendar span{
